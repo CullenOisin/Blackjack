@@ -18,7 +18,7 @@ def deal_card():
     return random.choice(list(cards.keys()))
 
 
-def play_blackjack():
+def play():
     player_hand = [deal_card(), deal_card()]
     dealer_hand = [deal_card(), deal_card()]
 
@@ -79,7 +79,7 @@ while choice2 != 'q':
     if choice2 == 'p':
         print("Bets Closed!")
         time.sleep(1)
-        play_blackjack()
+        play()
     elif choice2 == 'q':
         print("Thanks for playing")
     else:
